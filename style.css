@@ -1,0 +1,202 @@
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: rgb(56, 204, 140);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: rgb(185, 182, 211);
+    --GrayishBlue2: rgb(159, 157, 175);
+}
+
+body {
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: var(--Red);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.write-up {
+    text-align: center;
+    color: White;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    width: 70%;
+    margin-top: 50px;
+}
+
+.description {
+    opacity: 0.9;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trial {
+    background-color: var(--Blue);
+    width: 95%;
+    border: none;
+    color: white;
+    font-weight: 400;
+    padding: 10px 80px;
+    border-radius: 10px;
+    line-height: 25px;
+    box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.trial:hover{
+    opacity: 0.9;
+}
+
+.try {
+    font-weight: 600;
+}
+
+form {
+    width: 95%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container{
+    width: 75%;
+    position: relative;
+    right: 20px;
+}
+
+input {
+    border: 1px solid rgba(185, 182, 211, 0.5);
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--GrayishBlue2);
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+}
+
+.warning{
+    border: 2px solid var(--Red);
+}
+
+.mark{
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right 15px bottom 50%;
+}
+
+.claim-trial {
+    display: block;
+    width: 85%;
+    border: none;
+    background-color: var(--Green);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 16px;
+    box-shadow: 0px 5px 0px 0px rgba(56, 204, 140, 0.75);
+}
+
+.claim-trial:hover {
+    opacity: 0.8;
+}
+
+.tnc {
+    margin-top: 15px;
+    width: 75%;
+    font-size: 12px;
+    text-align: center;
+    color: var(--GrayishBlue);
+    margin-bottom: 20px;
+}
+
+.tos {
+    color: var(--Red);
+    font-weight: 600;
+}
+
+.error-message, .error-message2{
+    margin-left: auto;
+    color: var(--Red);
+    position: relative;
+    bottom: 10px;
+    left: 35px;
+    text-align: right;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.hide{
+    display: none;
+}
+
+@media (min-width: 500px) {
+    .claim-trial {
+        width: 82%;
+    }
+}
+
+@media (min-width: 700px) {
+    .claim-trial {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .claim-trial {
+        width: 78.5%;
+    }
+}
+
+@media (min-width: 1300px) {
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1200px;
+    }
+    .write-up{
+        width: 50%;
+        text-align: left;
+    }
+    .form-section{
+        width: 50%;
+    }
+    .heading{
+        width: 100%;
+        font-size: 55px;
+        line-height: 65px;
+    }
+    .description{
+        width: 100%;
+        font-size: 20px;
+    }
+    .claim-trial {
+        width: 82%;
+    }
+}
